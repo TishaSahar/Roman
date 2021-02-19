@@ -2,12 +2,12 @@ cmake_minimum_required(VERSION 3.6 FATAL_ERROR)
 
 project(Romain)
 
-include(cmake/function.cmake)
+include(cmake/functions.cmake)
 
 add_subdirectory(functions)
 add_subdirectory(main)
 
-option(BTEST "build test?" OFF)
+option(BTEST "build test?" ON)
 
 if(BTEST)
     add_subdirectory(gtest)
